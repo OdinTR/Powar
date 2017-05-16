@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 5e4a8e82130004b48a931689796ab8e3
+timeCreated: 1494949999
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - player: {fileID: 1572553543708822, guid: 3492aad2476979a489c3769fb2cafc81, type: 2}
+  - rb: {instanceID: 0}
+  - dashpng: {instanceID: 0}
+  - freezepng: {instanceID: 0}
+  - cube: {fileID: 1718261936912622, guid: 7905c71179954af4a8942809247a7346, type: 2}
+  - Frost: {fileID: 2100000, guid: 266c29e96a09bac41a17ab3d42f11da3, type: 2}
+  - red: {fileID: 2100000, guid: 436002e0ef428634591a5d70be90cedd, type: 2}
+  - blu: {fileID: 2100000, guid: dee2a536d2f885d4ea1a78475c4035de, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

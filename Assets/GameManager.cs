@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour {
 	
-	public GUIText gameovertext;
+	public GameObject gameovertext;
+	public GameObject playerwinstext;
+	public GameObject optionstext;
+	public GameObject gameoverpanel;
 	public GameObject scorep1;
 	public GameObject scorep2;
 	public int score1;
@@ -17,11 +20,12 @@ public class GameManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		gameovertext.text = "";
+		gameoverpanel.SetActive (false);
 		scorep1.GetComponent<UnityEngine.UI.Text> ().text = "";
 		scorep2.GetComponent<UnityEngine.UI.Text> ().text = "";
 		score1 = 0;
 		score2 = 0;
+		Time.timeScale = 1;
 		
 	}
 
@@ -36,16 +40,40 @@ public class GameManager : MonoBehaviour {
 				score2 += 1;
 				scorep2.GetComponent<UnityEngine.UI.Text> ().text = score2.ToString();
 				updatescore = false;
-			} else if (score1 == 3) {
-				p1wins = true;
-				gameovertext.text = "Game Over!";
-				updatescore = false;
-			} else if (score2 == 3) {
-				p2wins = true;
-				gameovertext.text = "Game Over!";
-				updatescore = false;
 			}
 
+		}
+
+		if (score1 == 3) {
+			p1wins = true;
+			gameover = true;
+			updatescore = false;
+		} else if (score2 == 3) {
+			p2wins = true;
+			gameover = true;
+			updatescore = false;
+		}
+
+
+		if (gameover) {
+			Time.timeScale = 0;
+			gameoverpanel.SetActive (true);
+			gameovertext.GetComponent<UnityEngine.UI.Text> ().text = "Game Over!";
+			if (p1wins == true) {
+				playerwinstext.GetComponent<UnityEngine.UI.Text> ().text = "Player1 Wins!";
+				gameoverpanel.GetComponent<CanvasRenderer> ().SetColor(new Color32 (255, 0, 0,150));
+			} else if (p2wins == true) {
+				playerwinstext.GetComponent<UnityEngine.UI.Text> ().text = "Player2 Wins!";
+				gameoverpanel.GetComponent<CanvasRenderer> ().SetColor(new Color32 (0, 0, 255,150));
+			}
+			optionstext.GetComponent<UnityEngine.UI.Text> ().text = "Press 'ESC' to get back to menu or 'R' for a Restart!";
+
+
+			if (Input.GetKey (KeyCode.Escape)) {
+				UnityEngine.SceneManagement.SceneManager.LoadScene (0);
+			} else if (Input.GetKey (KeyCode.R)) {
+				UnityEngine.SceneManagement.SceneManager.LoadScene (1);
+			}
 		}
 		
 	}
