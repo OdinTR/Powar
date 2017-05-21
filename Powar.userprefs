@@ -1,14 +1,14 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\GameManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\AImovement.cs">
     <Files>
-      <File FileName="Assets\movement.cs" Line="70" Column="5" />
+      <File FileName="Assets\movement.cs" Line="1" Column="1" />
       <File FileName="Assets\destroy.cs" Line="1" Column="1" />
-      <File FileName="Assets\GameManager.cs" Line="28" Column="22" />
+      <File FileName="Assets\GameManager.cs" Line="1" Column="1" />
       <File FileName="Assets\platformmovement.cs" Line="1" Column="1" />
       <File FileName="Assets\LoadOnClick.cs" Line="1" Column="1" />
-      <File FileName="Assets\getbacktomenu.cs" Line="9" Column="23" />
-      <File FileName="Assets\AImovement.cs" Line="65" Column="20" />
+      <File FileName="Assets\getbacktomenu.cs" Line="1" Column="1" />
+      <File FileName="Assets\AImovement.cs" Line="112" Column="65" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -27,7 +27,7 @@ public class AImovement : MonoBehaviour {
 	public Material red;
 	public Material blu;
 
-	// Use this for initialization
+
 	void Start () {
 		rb = GetComponent<Rigidbody> ();
 		speed = 0.3f;
@@ -73,7 +73,7 @@ public class AImovement : MonoBehaviour {
 		}
 	}
 	
-	// Update is called once per frame
+
 	void FixedUpdate () {
 		if (dashcooldown == true && dashcooldowntime > 0) {
 			dashcooldowntime -= Time.deltaTime;
@@ -115,10 +115,13 @@ public class AImovement : MonoBehaviour {
 				dashpng.enabled = true;
 								
 			} else {
+				
 				if (Random.value >= 0.2f) {
 					attackstate = true;
 				} else
 					attackstate = false;
+
+
 				if (playerorigin.x - AIorigin.x > 0 && attackstate == true) {
 					rb.AddForce (speed * dashspeed, 0, 0, ForceMode.VelocityChange);
 				} else if (playerorigin.x - AIorigin.x > 0 && attackstate == false) {
