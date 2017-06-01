@@ -1,6 +1,6 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\AImovement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\movement.cs">
     <Files>
       <File FileName="Assets\movement.cs" Line="1" Column="1" />
       <File FileName="Assets\destroy.cs" Line="1" Column="1" />
@@ -8,7 +8,7 @@
       <File FileName="Assets\platformmovement.cs" Line="1" Column="1" />
       <File FileName="Assets\LoadOnClick.cs" Line="1" Column="1" />
       <File FileName="Assets\getbacktomenu.cs" Line="1" Column="1" />
-      <File FileName="Assets\AImovement.cs" Line="112" Column="65" />
+      <File FileName="Assets\AImovement.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
