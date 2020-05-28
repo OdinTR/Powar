@@ -8,6 +8,6 @@ How To Play Powar
 
 Software made with Unity 5.6.1f1
 
-You can also reach to additional details about the game from this link -> https://github.com/OdinTR/Powar
+You can also reach to additional details about the game from this link -> https://github.com/steveberkhan/Powar
 
 Thank you for playing!
